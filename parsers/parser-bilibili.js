@@ -16,8 +16,8 @@ ParserBilibili.handled = function ( url) {
 
 function parseJson() {
     var parser = this;
-    var url = 'http://interface.bilibili.com/playurl?appkey=f3bb208b3d081dc8&cid=' + parser.id_ +
-        '&quality=3&type=mp4&otype=json';
+    var url = 'http://interface.bilibili.com/playurl?platform=bilihelper&appkey=95acd7f6cc3392f3&cid=' + parser.id_ +
+        '&otype=json';
     request(
         {
             uri: url,
