@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+    <script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/stylesheets/bootstrap.min.css">
+    <link rel="stylesheet" href="/stylesheets/style.css"/>
+    <script src="javascripts/parser-ui.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="row" id="page_header">
+        <div class="col-md-12 text-center ">
+            <h1><img src="images\logo.png" class="title-logo" style="vertical-align: middle;">&nbsp;&nbsp;MV<span class="text-primary">Hacker</span></h1>
+            <br/>
+        </div>
+    </div>
+    <div class="row">
+        <fieldset id="input_set">
+            <div class="col-md-offset-3 col-md-5">
+                <input type="text" id="video_page_url" class="form-control" style="margin-bottom: 10px;"
+                       placeholder="Please input the video page url here" value="http://www.bilibili.com/video/av5058518/"/>
+            </div>
+            <div class="col-md-1 text-left">
+                <button class="btn btn-primary btn-block" id="btn_go" style="margin-bottom: 30px;">GO!</button>
+            </div>
+        </fieldset>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="panel panel-default" id="info_panel" hidden>
+                <div class="panel-heading">INFORMATION</div>
+                <div class="panel-body">
+                    <div class="row top-span">
+                        <div class="col-md-4 text-center bottom-span">
+                            <img src="" alt="" class="img-thumbnail" id="video_thumbnail">
+                        </div>
+                        <div class="col-md-8 text-left bottom-span">
+                            <dl>
+                                <dt class="text-warning">Title</dt>
+                                <dd id="video_title">...</dd>
+                                <!--
+                                            <dt class="text-warning">Director</dt>
+                                            <dd id="video_director">...</dd>
+                                            <dt class="text-warning">Actor</dt>
+                                            <dd id="video_actor">...</dd>
+                                            <dt class="text-warning">Release</dt>
+                                            <dd id="video_release">...</dd>
+                                            <dt class="text-warning">Type</dt>
+                                            <dd id="video_type">...</dd>
+                                            -->
+                                <dt class="text-warning">Time length</dt>
+                                <dd id="video_time_length">...</dd>
+                                <dt class="text-warning">Original url</dt>
+                                <dd id="original_url">...</dd>
+                                <dt class="text-warning">Thumbnail url</dt>
+                                <dd id="thumbnail_url">...</dd>
+                                <dt class="text-warning">Description</dt>
+                                <dd id="video_desc">...</dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default" id="url_panel" hidden>
+                <div class="panel-heading">VIDEO URL(PLAY FUNCTION)</div>
+                <div class="panel-body" id="video_url_container">
+                </div>
+            </div>
+            <div class="panel panel-default" id="json_panel" hidden>
+                <div class="panel-heading">JSON RESULT</div>
+                <div class="panel-body">
+                    <textarea class="form-control" rows="10" id="json_result" style="max-width:100%"></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <p class="text-right" id="time_info" hide></p>
+        </div>
+    </div>
+</div>
+</body>
+</html>

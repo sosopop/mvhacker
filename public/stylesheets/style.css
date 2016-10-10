@@ -1,0 +1,45 @@
+body {
+  padding: 10px;
+}
+
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+dd{
+  word-break: break-all;
+  margin-bottom: 5px;
+}
+dt{
+  margin-bottom: 5px;
+  font-size:16px;
+}
+td{
+  word-break: break-all;
+}
+.bottom-span{
+  margin-bottom: 20px;
+}
+.top-span{
+  margin-top: 20px;
+}
+.url-title{
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 10px;;
+}
+.title-logo{
+  width: 48px;
+  height: 48px;
+  margin-top: -10px;
+}
+.url-label{
+  margin-right: 20px;
+}
+#video_thumbnail{
+  width: 100%;
+  max-width: 400px;
+}
+#page_header{
+  margin-top: 150px;
+}
